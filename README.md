@@ -22,7 +22,7 @@ This script has only been run/tested with Python 3.6.8. It presumably works with
 
 1. Clone the repository
 
-    `git clone git@github.com:BetterWorks/ssm-copier.git`
+    `git clone git@github.com:BetterWorks/ssm-docker-image-param-copier.git`
 
 2. Create a new virtualenv
 
@@ -30,7 +30,7 @@ This script has only been run/tested with Python 3.6.8. It presumably works with
 
 3. Enter the directory
 
-    `cd ssm-copier`
+    `cd ssm-docker-image-param-copier`
 
 4. Activate virtualenv
 
