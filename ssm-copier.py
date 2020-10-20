@@ -4,10 +4,10 @@ import boto3
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--source", action="store", dest="source",
                     help="Source application, e.g., sandbox")
-parser.add_argument("-e", "--environment", action="store", dest="environment",
-                    help="Environment/AWS account/stage, e.g., sandbox")
 parser.add_argument("-d", "--destination", action="store", dest="destination",
                     help="Destination application name, e.g., sandbox5")
+parser.add_argument("-e", "--environment", action="store", dest="environment",
+                    help="Environment/AWS account/stage, e.g., sandbox")
 parser.add_argument("-l", "--latest", action="store_true", default=False,
                     help="Use latest as tag for all Docker images",
                     dest="latest")
