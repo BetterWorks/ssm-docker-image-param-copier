@@ -52,7 +52,7 @@ This script has only been run/tested with Python 3.6.8. It presumably works with
 
     `python ssm-coper.py -s sandbox -d sandbox5 -e sandbox`
     
-    **Note**: In order to use the `latest` tag as opposed to what the `sandbox` app is using for all Docker image tag parameters, use the `-l` option.
+    **Note**: In order to use the `latest` tag for all micro serviceas as opposed to what the `sandbox` app is using for all Docker image tag parameters, add the `-l` option. `-l` is all or nothing, so use with caution.
 
 9. End `aws-vault` session
 
