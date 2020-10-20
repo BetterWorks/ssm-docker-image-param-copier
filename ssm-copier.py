@@ -9,7 +9,7 @@ parser.add_argument("-d", "--destination", action="store", dest="destination",
 parser.add_argument("-e", "--environment", action="store", dest="environment",
                     help="Environment/AWS account/stage, e.g., sandbox")
 parser.add_argument("-l", "--latest", action="store_true", default=False,
-                    help="Use latest as tag for all Docker images",
+                    help="Use latest as tag for all Docker images. Default is False.",
                     dest="latest")
 args = parser.parse_args()
 
