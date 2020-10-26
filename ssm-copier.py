@@ -117,6 +117,7 @@ def put_secure_string_params(destination, environment, source_param_names,
                             source_param_values):
     for param, value in zip(source_param_names, source_param_values):
         param_name, param_value = (param, value)
+        print('Copying parameter {}'.format(param_name))
         response = client.put_parameter(
             Name='/bw/' + environment + '/betterworks-' +
             destination + '/cicd/deployment/manifest/' + param_name,
@@ -130,6 +131,7 @@ def put_string_params(destination, environment, source_param_names,
                             source_param_values):
     for param, value in zip(source_param_names, source_param_values):
         param_name, param_value = (param, value)
+        print('Copying parameter {}'.format(param_name))
         response = client.put_parameter(
             Name='/bw/' + environment + '/betterworks-' +
             destination + '/cicd/deployment/manifest/' + param_name,
@@ -203,3 +205,5 @@ put_secure_string_params(args.destination, args.environment,
 
 put_string_params(args.destination, args.environment,
                   string_param_names, string_param_values)
+
+print('Done!')
